@@ -44,6 +44,7 @@ public class OperationsTest {
         System.out.println("MakeFormula");
         String expResult = "";
         String result = Operations.MakeFormula();
+        assertNotNull(result);
         assertEquals(expResult, result);
         
     }
