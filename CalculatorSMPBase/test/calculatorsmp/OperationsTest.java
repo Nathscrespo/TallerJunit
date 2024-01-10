@@ -20,22 +20,6 @@ public class OperationsTest {
     public OperationsTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     /**
      * Test of MakeFormula method, of class Operations.
      */
@@ -45,7 +29,7 @@ public class OperationsTest {
         String expResult = "";
         String result = Operations.MakeFormula();
         assertNotNull(result);
-        assertEquals(expResult, result);
+        assertNotEquals(expResult, result);
         
     }
 
@@ -70,4 +54,36 @@ public class OperationsTest {
         assertNotEquals(expResult, result);
         
     }
+    
+    @Test
+    public void testMultiplicationByZero() {
+        System.out.println("Prueba 0*n");
+        String formula1 = "0*2";
+        String expResult1 = "0*2=0";
+        String result1 = Operations.Solve(formula1);
+        assertEquals(expResult1, result1);
+        
+        System.out.println("Prueba n*0");
+        String formula2 = "2*0";
+        String expResult2 = "2*0=0";
+        String result2 = Operations.Solve(formula2);
+        assertEquals(expResult2, result2);
+    }
+    
+    @Test
+    public void testNumDivisionWithZero() {
+        System.out.println("Prueba n/0");
+        String formula1 = "2/0";
+        String expResult1 = "2/0=0";
+        String result1 = Operations.Solve(formula1);
+        assertNotEquals(expResult1, result1);
+        
+        System.out.println("Prueba 0/n");
+        String formula2 = "0/2";
+        String expResult2 = "0/2=0";
+        String result2 = Operations.Solve(formula2);
+        assertEquals(expResult2, result2);
+        
+    }
+    
 }
