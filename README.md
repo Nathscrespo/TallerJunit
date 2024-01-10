@@ -25,6 +25,9 @@ Salidas esperadas: "2x5+6=16"
 **metodo make formula** 
 **prueba 1**
 Identificador: TestNoNull
+
 Propósito: Verificar que el método MakeFormula no devuelve un resultado nulo.
+
 Entradas: No hay entradas explícitas, ya que la prueba se centra en el resultado del método MakeFormula.
+
 Salidas Esperadas: La salida esperada es que el resultado del método MakeFormula no sea nulo.
