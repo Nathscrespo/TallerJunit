@@ -4,9 +4,6 @@
 *Fiorella Quijano  
 *Angello Vasconez  
 **Pruebas unitarias**     
-metodo MakeFormula
-
-
 **metodo Solve**    
 **prueba 1**  
 Identificador: TestSuma  
