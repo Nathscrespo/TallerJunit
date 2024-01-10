@@ -23,7 +23,9 @@ Salidas esperadas: "2x5+6=16"
 ![compuesta](https://github.com/Nathscrespo/TallerJunit/assets/89329395/7d3764b3-3979-45ba-8e45-a34156237bac)  
 
 **metodo make formula** 
+
 **prueba 1**
+
 Identificador: TestNoNull
 
 Propósito: Verificar que el método MakeFormula no devuelve un resultado nulo.
